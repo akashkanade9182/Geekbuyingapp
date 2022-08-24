@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign up</title>
+
+    <style>
+    #bar{
+
+background-color: #0F73FE;  
+padding: 35px 163px;
+
+
+}
+    #headline{
+        color: #333;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+    
+        
+
+    }
+    
+    #back{
+          background-color: #f5f5f5;
+          width: 100%;
+      
+          display: flex;
+    
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+    }
+    
+    #box{
+          background-color: white;
+          height:400px;
+          width: 26%;
+          margin-top: 55px;
+          margin-bottom: 70px;
+
+          padding: 2%;
+          justify-content: space-around;
+          font-size: 18px;
+    }
+
+    
+    #lol{
+        justify-content: space-around;
+        font-size: 18px;
+        display: flex;
+    }
+      
+    a{
+        text-decoration: none;
+        font-weight: 400;
+        color:rgb(19, 19, 19); 
+         
+    }
+    
+    
+    #email,#password,#new,#nickname{
+        margin: auto;
+        margin-bottom: 20px;
+        padding:12px 5px 12px 5px;
+        width: 96%;
+        border-radius: 4px;
+        border: 1px solid rgb(218, 215, 215);
+        color: rgb(218, 215, 215);
+    }
+    
+    label{
+        color: rgb(133, 130, 130);
+        font-size: 15px;  
+    }
+    
+    
+    
+    #new{
+        margin-top: 20px;
+        background: blue;
+        border: 0px;
+        border-radius: 4px;
+        color: white;  
+        width: 100%;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    button{
+   
+      margin-top: 20px;
+      height: 45px;
+      border-color: #d1d1d1;
+        border: 0px;
+        border-radius: 4px;
+        color: #666; 
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: #f0f0f0;
+        
+  
+    
+    }
+    #or{
+      font-size: 20px;
+    width: 20px;
+    color: #999;
+    background-color: #fff;
+    /* padding: 0 2px; */    margin-left: 185px;
+   
+ 
+  
+   
+    }
+    #rip{
+ width: 8%;
+ border-radius: 50%;
+ margin-left: 180px;
+ 
+
+ display: inline !important;
+  
+}
+#last{
+  font-size: 15px;
+  margin-top: 80px;
+}
+#logo{
+  width: 180px;
+  height: 50px;
+  margin-left: 490px;
+
+}
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="bar">
+      <a href="/"></a>
+      <img id="logo"
+        src="https://content1.geekbuying.com/m/Content/images/headImg/geek_logo.png"
+        alt=""
+      />
+    </div>
+    <div id="back" >
+      <div id="box">
+        <div id="lol">
+          <div id="headline">Create your account</div>
+          
+        </div>
+
+
+        <form>
+          <input id="nickname" type="text" placeholder="Nick name" />
+          <input id="email" type="text" placeholder="Email address" />
+          <input id="password" type="password" placeholder="Password" />
+          <input id="new" type="submit" value="Create account" />
+ 
+        </form>
+        <div id="check">
+            <div>
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms">
+               I agree to Geekbuying's 
+                <a id="anc" href="https://www.geekbuying.com/help/about/terms_of_use">
+                    Terms of Use & Privacy Policy.
+                </a>
+              </label>
+            </div>
+      
+  </body>
+</html>
+<script>
+
+  var form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var data = {
+      nickname: form.nickname.value,
+      email: form.email.value,
+      password: form.password.value,
+    };
+
+    localStorage.setItem("signupData", JSON.stringify(data));
+    alert("Sign up successful");
+    window.location.href = "signin.html";
+  });
+</script>
