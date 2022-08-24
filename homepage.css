@@ -1,0 +1,47 @@
+#add{
+    width:90%;
+    height:150px;
+    margin: auto;
+}
+#add>img{
+    width:100%;
+    height:100%;
+}
+#categories{
+    width: 90%;
+    margin:auto;
+    text-align: left;
+    padding:15px 15px;
+    margin-top: 30px;
+    height:500px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#categories>div{
+    width:95%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows:400px ;
+    grid-gap:30px;
+    padding:10px 10px;
+}
+.cat>img{
+    display: block;
+width:90%;
+height:60%;
+margin: auto;
+}
+.cat>h3{
+    font-size: 25px;
+    text-align: center;
+}
+.cat>p{
+    font-size: 20px;
+    color:grey;
+    text-align: left;
+
+}
+.cat{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:10px 10px;
+}
