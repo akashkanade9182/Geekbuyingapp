@@ -55,6 +55,7 @@
 }
 
 #top_nav>div>div>i:hover{
+    transition: transform .2s ease, -webkit-transform .2s ease;
       
      transform: rotate(180deg) ;
        
@@ -104,6 +105,7 @@
     padding: 12px;
     border: none;
     font-size: 17px;
+    outline: none;
 }
 #mid_nav>div:nth-child(2)>div>button{
    padding: 2px;
@@ -157,6 +159,7 @@ margin-left: 3px;
 margin-right: 3px;
 }
 #mid_nav>div:nth-child(3)>div:nth-child(1)>i:hover{
+    transition: transform .2s ease, -webkit-transform .2s ease;
     transform: rotate(180deg) ;
 }
 
@@ -213,4 +216,6 @@ margin-right: 3px;
     font-size: 20px;
     color: white;
 }
+
+
 
