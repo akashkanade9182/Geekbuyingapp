@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="styles/navbar.css">
+<body>
+    <div id="navbar"></div>
+    <div id="add">
+        <img src="https://img.gkbcdn.com/s3/bn/2208/1500x125-62fda2732b40c91650a7cafd.jpg" alt="error">
+    </div>
+    <div id="categories">
+       Trending categories
+        <div>
+            <div class="cat" id="kitchen">
+                <img src="https://img.gkbcdn.com/bn/2205/488x2743-628f62882b40c91f8cd36998._p1_.jpg" alt="error">
+                <h3>Smart Home and Kitchen</h3>
+                <p>living room furniture,room cleaning robot,kushan,
+                    hoem cleaner vacumes,upto 60%off.
+                </p>
+            </div>
+            <div id="Electroic" class="cat">
+                <img src="https://img.gkbcdn.com/p/2020-05-12/HXSJ-S90-720P-HD-Webcam-For-Laptop-Desktop-TV-Black-904016-._w280_p1_.jpg" alt="">
+                <h3>Electroic accessories</h3>
+                <p>mobile,camera,trimmer,laptop,headset upto 30-45% off</p>
+            </div>
+            <div id="Sports" class="cat">
+                <img src="https://img.gkbcdn.com/p/2020-08-27/syl-08-electric-skateboard-off-road-with-remote-control-black-1598514023841._w280_p1_.jpg" alt="">
+                <h3>Sports and Outdoors</h3>
+                <p>new e-ride,sports shoes,sports tack,doumble,resistnace tube upto 47% off.</p>
+            </div>
+            <div id="phon" class="cat">
+                <img src="https://img.gkbcdn.com/p/2022-03-18/6-in-1-Wireless-Charger-Mobile-Phone-Wireless-Charging-Bracket-497959-0._w280_p1_.jpg" alt="">
+                <h3>Phone accessories</h3>
+                <p>mobile backcover,mobile display glass,headphons,headset,sound,upto 50%off.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="add2">
+        <img src="https://img.gkbcdn.com/bn/2205/1500x260-628f67db2b40c91f8ca376f8._p1_.jpg" alt="">
+    </div>
+    <div id="bestceller">
+        Best Celler
+         <div id="bestcellerdiv">
+         
+         </div>
+     </div>
+    <div id="productshowing">
+        <div id="sideadd">
+            <div>
+        <img src="https://img.gkbcdn.com/s3/bb/eleglide-20220531151324673.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://img.gkbcdn.com/s3/bb/jimmy-20200910094916929.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://img.gkbcdn.com/s3/bb/roborock-20211111211035580.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://img.gkbcdn.com/s3/bb/tronsmart-20210123120544453.jpg" alt="">
+            </div>
+        </div>
+        <div id="productdiv"></div>
+    </div>
+    
+</body>
+</html>
+<script  src="homepage.js"></script>
+<script type="module">
+  import navbar from "./components/navbar.js"
+  let nav=document.getElementById("navbar");
+  nav.innerHTML=navbar();
+</script>

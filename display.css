@@ -1,0 +1,100 @@
+#main{
+    width: 80%;
+    height:800px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+#main>div{
+    padding:20px 20px;
+}
+#add{
+    width:90%;
+    height:150px;
+    margin: auto;
+    margin-top: 40px;
+}
+#add>img{
+    width:100%;
+    height:100%;
+}
+#photo>img{
+    width:100%;
+    height:70%;
+}
+#photo{
+    border-right:1px solid grey ;
+    height:fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+#buttonbox{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+}
+#addtocart{
+    height: 50px;
+    border:3px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+#buynow{
+    height: 50px;
+    border:3px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 5px 5px;
+
+}
+button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+
+
+}
+#pricebox{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+}
+#pricebox>h4:nth-child(2){
+    text-decoration: line-through;
+    color: grey;
+    font-size: 20px;
+    margin-top: 40px;
+
+}
+#offbox{
+    background-color: #80deea;
+    color:blue;
+    font-size: 20px;
+    width:45%;
+    padding:10px 10px;
+    border-radius: 7px;
+    margin-top: 30px;
+
+}
+#data>h2{
+    margin-top: 30px;
+}
+
+    #data>p{
+        margin-top: 30px;
+    
+    }
+    #data{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        height:fit-content
+
+    }
+  
