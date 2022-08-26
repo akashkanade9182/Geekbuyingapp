@@ -28,7 +28,7 @@ function append(data){
     }
 }
 async function getData(){
-    const url=`https://thawing-anchorage-00134.herokuapp.com/api/electronic`;
+    const url=`https://thawing-anchorage-00134.herokuapp.com/api/${electronic`;
     let res=await fetch(url);
     let data=await res.json();;
     append(data);
