@@ -22,7 +22,7 @@ function appendproductlist(data){
         let brand=document.createElement("p");
         brand.innerText=`brand-${ele.brand}`;
         let rating=document.createElement("p");
-        rating.innerText=`brand-${ele.rating}`;
+        rating.innerText=`rating-${ele.rating}`;
         let btn=document.createElement("button");
         btn.innerText="45% off";
         let div=document.createElement("div");

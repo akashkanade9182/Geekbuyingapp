@@ -1,0 +1,159 @@
+#main{
+    width:90%;
+    margin:auto;
+    display:flex;
+    margin-top: 40px;
+}
+#sidebox{
+    width:25%;
+
+}
+#productlist{
+    width:75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    margin-left: 30px;
+}
+.product{
+    height:350px;
+    padding:1px 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+.product:hover{
+   background-color:#fafafa ;
+}
+.product>h2{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.product>h4{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5px;
+    color:grey;
+    margin-top: 10px;
+
+
+
+}
+.product>p{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5px;
+    color:grey;
+    margin-top: 10px;
+
+
+}
+
+.product>img{
+    width:150px;
+    height:150px;
+    display:block;
+    margin:auto;
+}
+#newdiv{
+width: 50px;
+height:20px;
+font-size: 15px;
+text-align: center;
+background-color: orange;
+color:white;
+border: none;
+border-radius: 5px;
+margin-left: 82%;
+margin-top: 5%;
+transform: rotateZ(40deg);
+
+}
+button{
+    width:50px;
+    height:20px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+
+}
+/***************sidebox*******************/
+#sidebox{
+    width:20%;
+    padding:10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+#sidebox>div{
+    width: 80%;
+    padding:5px;
+    margin:auto;
+    height:80px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+#sidebox>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.brandimage>img{
+    width:100%;
+    height:80px;
+}
+button{
+    width:50px;
+    height:20px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+#productlist{
+    width:80%;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px
+}
+.product{
+    height:400px;
+    padding:10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.product>h2{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+}
+.product>h4{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+.product>p{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.product>img{
+    width:150px;
+    height:150px;
+    display:block;
+    margin:auto;
+}
