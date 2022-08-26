@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign in</title>
+
+    <style>
+    #bar{
+
+        background-color: #0F73FE;  
+        padding: 35px 163px;
+        
+        
+    }
+    
+    #back{
+          background-color: #f5f5f5;
+          width: 100%;
+      
+          display: flex;
+    
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+    }
+    
+    #box{
+          background-color: white;
+          height:430px;
+          width: 26%;
+          margin-top: 55px;
+          margin-bottom: 70px;
+          /* border-radius: 10px; */
+          padding: 2%;
+          justify-content: space-around;
+          font-size: 18px;
+    }
+      
+    #onit{
+        /* border-bottom: 2px solid #ff6e26; */
+        color: #333;
+        font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+    }
+    
+    #lol{
+        justify-content: space-around;
+        font-size: 18px;
+        display: flex;
+    }
+      
+    a{
+        text-decoration: none;
+        font-weight: 400;
+        color:rgb(19, 19, 19); 
+         
+    }
+    
+    
+    #email,#password,#new{
+        margin: auto;
+        margin-bottom: 20px;
+        padding:12px 5px 12px 5px;
+        width: 96%;
+        border-radius: 4px;
+        border: 1px solid rgb(218, 215, 215);
+        color: rgb(218, 215, 215);
+    }
+    
+    label{
+        color: rgb(133, 130, 130);
+        font-size: 15px;  
+    }
+    
+    
+    
+    #new{
+        margin-top: 20px;
+        background: blue;
+        border: 0px;
+        border-radius: 4px;
+        color: white;  
+        width: 100%;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    button{
+   
+      margin-top: 10px;
+      height: 45px;
+      border-color: #d1d1d1;
+        border: 0px;
+        border-radius: 4px;
+        color: #666; 
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: #f0f0f0;
+        
+  
+    
+    }
+    #or{
+      font-size: 20px;
+    width: 20px;
+    color: #999;
+    background-color: #fff;
+    /* padding: 0 2px; */    margin-left: 185px;
+   
+ 
+  
+   
+    }
+    #rip{
+ width: 8%;
+ border-radius: 50%;
+ margin-left: 180px;
+ 
+
+ display: inline !important;
+  
+}
+#last{
+  font-size: 15px;
+  margin-top: 80px;
+}
+#logo{
+  width: 180px;
+  height: 50px;
+  margin-left: 490px;
+
+}
+    
+    </style>
+  </head>
+  <body>
+    <div id="bar">
+        <a href="/"></a>
+      <img id="logo"
+        src="https://content1.geekbuying.com/m/Content/images/headImg/geek_logo.png"
+        alt=""
+      />
+    </div>
+    <div id="back" >
+      <div id="box">
+        <div id="lol">
+          <div><a id="onit" href="./signin.html">SIGN IN</a></div>
+          
+        </div>
+
+
+        <form>
+          <input id="email" type="text" placeholder="Email address" />
+          <input id="password" type="password" placeholder="Password" />
+          <input type="checkbox" id="terms" name="keep me sign in" checked />
+          <label for="terms">Keep me signed in         
+            <a class="anc" href="signup.html">
+              forget your password?
+          </a>
+          </label>
+          <input id="new" type="submit" value="Sign In" />
+ 
+        </form>
+        <div><button><a href="./signup.html">Create a new account</button></a></div>
+        <div id="or"><p>or</p></div>
+        <div>
+          <a
+            href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            ><img
+              id="rip"
+              src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+              alt="Google"
+          /></a>
+          
+        </div>
+
+        <div id="last"><p>Copyright © 2012 - 2022 Geekbuying.com. All rights reserved.</p></div>
+
+        
+
+
+  </body>
+</html>
+<script>
+  var form = document.querySelector("form");
+  var signupData = JSON.parse(localStorage.getItem("signupData"));
+  //   console.log(loginData)
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var data = {
+      email: form.email.value,
+      password: form.password.value,
+    };
+
+    if (signupData === null) {
+      alert("Please create an account First");
+    } else if (
+      signupData.email == data.email &&
+      signupData.password == data.password
+    ) {
+      localStorage.setItem("signin", JSON.stringify(signupData));
+      alert("login Successful");
+      window.location.href = "../index.html";
+    } else {
+      alert("User data does not exist please check before you Enter ");
+    }
+  });
+</script>
