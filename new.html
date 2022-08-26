@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+</head>
+<link rel="stylesheet" href="new.css">
+<link rel="stylesheet" href="./styles/navbar.css">
+<body>
+    <div id="navbar"></div>
+    <div id="main">
+        <div id="sidebox">
+            <div>
+                <h4>Categories</h4>
+                <div onclick="searchEl()">Electronic</div>
+                <div onclick="searchSp()">Sports and fitness</div>
+                <div onclick="searchKitch()">Home and Kitchen</div>
+                <div onclick="searchph()">mobile and accessories</div>
+            </div>
+           <div> <h4 >Filters</h4>
+            <div onclick="sortlh()">price low to High</div>
+            <div onclick="sorthl()">price High to low</div>
+            <div onclick="sortr()">high ratings</div></div>
+            
+        </div>
+        <div id="productlist"></div>
+    </div>
+    
+</body>
+</html>
+<script src="new.js"></script>
+<script type="module">
+    import navbar from "./components/navbar.js"
+  let nav=document.getElementById("navbar");
+  nav.innerHTML=navbar();
+</script>

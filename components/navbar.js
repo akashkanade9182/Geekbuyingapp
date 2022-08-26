@@ -18,7 +18,7 @@ function navbar(){
   </div>
   <div id="down_nav">
     <div><i class="fi fi-rr-menu-burger"></i><p>Categories</p></div>
-    <a href="#">New</a>
+    <a href="new.html">New</a>
     <a href="#">Bestselling</a>
     <a href="#">Brand</a>
     <a href="#">Clearance</a>
