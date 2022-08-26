@@ -34,8 +34,14 @@ function append(ele){
         let btn1=document.createElement("button");
         btn1.setAttribute("id","addtocart");
         btn1.innerText="Add to Cart";
+        btn1.addEventListener("click",function(){
+            addtoCart(ele);
+        })
         let btn2=document.createElement("button");
         btn2.setAttribute("id","buynow");
+        btn.addEventListener("click",function(){
+            buyitem(ele);
+        })
         btn2.innerText="Buy Now";
         div.append(btn1,btn2);
         databox.append(name,pricebox,offbox,brand,btn,rating,div);
@@ -43,4 +49,16 @@ function append(ele){
        
        
     
+}
+let Cartarray=[];
+let Buyarray=[];
+function addtoCart(ele){
+    Cartarray.push(ele);
+    localStorage.setItem("addtoCart",JSON.stringify(Cartarray));
+    alert("your product is successfully add to Cart");
+}
+function buyitem(ele){
+    Buyarray.push(ele);
+    localStorage.setItem("addtoCart",JSON.stringify(Buyarray));
+    window.location.href="buy.html"
 }
