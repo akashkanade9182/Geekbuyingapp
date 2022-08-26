@@ -10,6 +10,7 @@ img {vertical-align: middle;}
   max-width: 80%;
   position: relative;
   margin: auto;
+  margin-top: 100px;
 }
 
 /* Next & previous buttons */
@@ -125,4 +126,15 @@ img {vertical-align: middle;}
     overflow: hidden;
     margin-right: 35px;
 
+}
+
+#container{
+  display: grid;
+  /* grid-template-rows: repeat(3,1fr); */
+  grid-template-columns: repeat(6,16%);
+  margin-top: 100px;
+  
+}
+#container>div>div>image{
+  height: 50px;
 }
