@@ -2,6 +2,7 @@
     width:90%;
     height:150px;
     margin: auto;
+    margin-top: 40px;
 }
 #add>img{
     width:100%;
@@ -20,7 +21,7 @@
 #categories>div{
     width:95%;
     display:grid;
-    grid-template-columns:repeat(4,1fr) ;
+    grid-template-columns:repeat(4,275px) ;
     grid-template-rows:400px ;
     grid-gap:30px;
     padding:10px 10px;
@@ -32,16 +33,168 @@ height:60%;
 margin: auto;
 }
 .cat>h3{
-    font-size: 25px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
 }
 .cat>p{
-    font-size: 20px;
+    font-size: 15px;
     color:grey;
     text-align: left;
+
 
 }
 .cat{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding:10px 10px;
+    height:350px;
+}
+.product{
+    height:520px;
+    padding:10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.product>h2{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.product>img{
+    width:250px;
+    height:230px;
+    display:block;
+    margin:auto;
+}
+button{
+    width:50px;
+    height:20px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+/***********best celler*********/
+#bestceller{
+    width: 90%;
+    margin:auto;
+    text-align: left;
+    padding:15px 15px;
+    margin-top: 0px;
+    height:500px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+#bestcellerdiv{
+    width:95%;
+    display:grid;
+    grid-template-columns:repeat(4,275px) ;
+    grid-template-rows:400px ;
+    grid-gap:30px;
+    padding:10px 10px;
+    margin-top: 20px;
+}
+.bestcellproduct{
+    height:400px;
+    padding:10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.bestcellproduct>h2{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+.bestcellproduct>h4{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+.bestcellproduct>p{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.bestcellproduct>img{
+    width:150px;
+    height:150px;
+    display:block;
+    margin:auto;
+}
+/************productshowing***********/
+#productshowing{
+    width:95%;
+    margin: auto;
+    display: flex;
+}
+#sideadd{
+    width:40%;
+}
+#sideadd>div:first-child{
+    margin-top: 0px;
+}
+#sideadd>div{
+    width:100%;
+    height:300px;
+    margin-top: 20px;
+}
+#sideadd>div>img{
+    width:100%;
+    height:100%;
+}
+/***************productdiv*************/
+#productdiv{
+    width:60%;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px
+}
+.product{
+    height:350px;
+    padding:10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.product>h2{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+}
+.product>h4{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+.product>p{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.product>img{
+    width:150px;
+    height:150px;
+    display:block;
+    margin:auto;
+}
+#add2{
+    width:90%;
+    height:200px;
+    margin:auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#add2>img{
+    width:100%;
+    height:100%;
 }
