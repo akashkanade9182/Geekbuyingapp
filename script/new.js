@@ -4,12 +4,27 @@ window.productlist=async()=>{
     let data=await res.json();
     return data;
 }
+function search(event){
+    if(event.key=="Enter")
+    {
+       inputsearch();
+    }
+   
+}
+async function inputsearch(){
+    let quary=document.getElementById("search_input").value;
+    const url=`https://thawing-anchorage-00134.herokuapp.com/api/${quary}`
+    let res=await fetch(url);
+    let data=await res.json();
+    appendproductlist(data)
+}
 async function autoappend(){
  let data= await productlist();
  appendproductlist(data);
 }
 function appendproductlist(data){
     let container=document.getElementById("productlist");
+    container.innerHTML=null;
     
     container.innerHTML=null;
     data.forEach(function(ele){

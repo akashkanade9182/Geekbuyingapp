@@ -31,6 +31,7 @@
 width:90%;
 height:60%;
 margin: auto;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .cat>h3{
     font-size: 20px;

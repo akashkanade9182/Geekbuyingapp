@@ -1,9 +1,11 @@
 let data=JSON.parse(localStorage.getItem("display"))||[];
+let counter=0;
 append(data);
 function append(ele){
     let container=document.getElementById("main");
     let imagebox=document.getElementById("photo");
-    let databox=document.getElementById("data")
+    let databox=document.getElementById("data");
+    
     
    
         let image=document.createElement("img");
@@ -37,6 +39,25 @@ function append(ele){
         btn1.addEventListener("click",function(){
             addtoCart(ele);
         })
+        let countbox=document.createElement("div");
+        countbox.setAttribute("id","countbox");
+        let quantity=document.createElement("p");
+        quantity.innerText="Qunatity"
+        let countlow=document.createElement("div");
+        countlow.innerText="-";
+        countlow.addEventListener("click",function(){
+            Qdecrease();
+        })
+        let counthigh=document.createElement("div");
+        counthigh.innerText="+";
+        counthigh.addEventListener("click",function(){
+            Qincrease();
+        })
+        let count=document.createElement("div");
+        count.innerText=counter;
+        count.setAttribute("id","count");
+        countbox.append(countlow,count,counthigh);
+
         let btn2=document.createElement("button");
         btn2.setAttribute("id","buynow");
         btn.addEventListener("click",function(){
@@ -44,21 +65,53 @@ function append(ele){
         })
         btn2.innerText="Buy Now";
         div.append(btn1,btn2);
-        databox.append(name,pricebox,offbox,brand,btn,rating,div);
+        databox.append(name,pricebox,offbox,brand,btn,rating,quantity,countbox,div);
       
        
        
     
 }
+function Qdecrease(){
+    counter--;
+    let count=document.getElementById("count");
+    count.innerText=counter;
+
+};
+function Qincrease(){
+    counter++;
+    let count=document.getElementById("count");
+    count.innerText=counter;
+
+};
 let Cartarray=[];
 let Buyarray=[];
 function addtoCart(ele){
-    Cartarray.push(ele);
+    let datalist={
+        name:ele.name,
+        image:ele.image,
+        price:ele.price,
+        rating:ele.rating,
+        qunatity:counter
+
+
+    }
+    Cartarray.push(datalist);
+   
     localStorage.setItem("addtoCart",JSON.stringify(Cartarray));
     alert("your product is successfully add to Cart");
+    window.location.href="cart.html";
 }
 function buyitem(ele){
-    Buyarray.push(ele);
+    let datalist={
+        name:ele.name,
+        image:ele.image,
+        price:ele.price,
+        rating:ele.rating,
+        qunatity:counter
+
+
+    }
+    Buyarray.push(datalist);
     localStorage.setItem("addtoCart",JSON.stringify(Buyarray));
     window.location.href="buy.html"
 }

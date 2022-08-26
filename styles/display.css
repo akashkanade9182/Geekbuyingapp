@@ -97,4 +97,29 @@ button{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        height:fit-content
 
     }
+    #countbox{
+        width:200px;
+        height:50px;
+
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #countbox>div{
+        
+        width:50px;
+        height:40px;
+        display:block;
+        background-color: cornflowerblue;
+        color:white;
+        text-align:center;
+        border-radius: 7px;
+    }
+    #countbox>div:nth-child(2){
+        text-align: center;
+        width:50px;
+        background-color: white;
+        color:black
+
+    }
   

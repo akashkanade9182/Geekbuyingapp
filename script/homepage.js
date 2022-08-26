@@ -70,3 +70,11 @@ window.bestceller=async()=>{
 }
 productdiv();
 bestceller();
+function kitchenO()
+{
+    window.location.href="kitchen.html";
+}
+function sportsO()
+{
+    window.location.href="sports.html";
+}

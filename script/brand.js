@@ -79,5 +79,19 @@ async function autoappend(){
     })
     appendproductlist(data);
    }
+   function search(event){
+    if(event.key=="Enter")
+    {
+       inputsearch();
+    }
+   
+}
+async function inputsearch(){
+    let quary=document.getElementById("search_input").value;
+    const url=`https://thawing-anchorage-00134.herokuapp.com/api/${quary}`
+    let res=await fetch(url);
+    let data=await res.json();
+    appendproductlist(data)
+}
 
    autoappend();
