@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="display.css">
-<body>
+<link rel="stylesheet" href="./styles/navbar.css">
+<body><div id="navbar"></div>
     <div id="add">
         <img src="https://img.gkbcdn.com/s3/bn/2208/1500x125-62fda2732b40c91650a7cafd.jpg" alt="error">
     </div>
@@ -18,3 +19,8 @@
 </body>
 </html>
 <script src="display.js"></script>
+<script type="module">
+     import navbar from "./components/navbar.js"
+  let nav=document.getElementById("navbar");
+  nav.innerHTML=navbar();
+</script>
