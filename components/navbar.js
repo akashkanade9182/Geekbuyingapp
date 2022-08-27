@@ -13,7 +13,7 @@ function navbar(){
        <div>
         <div><p>Ship to</p><img src="https://cdn-icons-png.flaticon.com/512/206/206606.png" alt=""> <p>/INR</p><i class="fi fi-rr-angle-small-down"></i></div>
         <div><i class="fi fi-rs-user"></i><a href="#"><p>Sign in</p></a></div>
-        <div><a href="#"><i class="fi fi-bs-shopping-cart"></i></a><p class="cart">0</p></div>
+        <div><a href="#"><i class="fi fi-bs-shopping-cart"></i></a><p id="cart_add">0</p></div>
        </div>
   </div>
   <div id="down_nav">
