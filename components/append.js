@@ -1,3 +1,3 @@
-let append=(data)=>{
-    data=for
-}
+// let append=(data)=>{
+//     data=for
+// }

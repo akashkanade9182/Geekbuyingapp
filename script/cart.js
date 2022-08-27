@@ -7,6 +7,8 @@ import foter from "../components/foter.js";
 let fot=document.getElementById("foter")
 fot.innerHTML=foter()
 
+ 
+
 
 let data=JSON.parse(localStorage.getItem("addtoCart")) || []
 

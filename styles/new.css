@@ -71,7 +71,7 @@ margin-top: 5%;
 transform: rotateZ(40deg);
 
 }
-button{
+.product>button{
     width:50px;
     height:20px;
     font-size: 10px;

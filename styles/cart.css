@@ -258,6 +258,12 @@ color: gray;
     font-weight: bolder;
     color: orangered;
 }
+
+/* #cart_add{
+    font-size: 30px;
+    font-weight: bolder;
+    color: orangered;
+} */
 #cart_price>div:nth-child(4){
     width: 25%;
     display: grid;

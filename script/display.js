@@ -1,3 +1,8 @@
+
+
+
+
+
 let data=JSON.parse(localStorage.getItem("display"))||[];
 let counter=0;
 append(data);
@@ -20,16 +25,17 @@ function append(ele){
         let offbox=document.createElement("h4");
         offbox.setAttribute("id","offbox");
         offbox.innerText="2% OFF for new User"
-        let offprice=document.createElement("h4");
-        offprice.innerText=`${ele.price+ele.price*045}Rs`;
-        offprice.style.textDecoration="linethrough";
-        pricebox.append(price,offprice);
+        // let offprice=document.createElement("h4");
+        // offprice.innerText=`${ele.price+ele.price*045}Rs`;
+        // offprice.style.textDecoration="linethrough";
+        pricebox.append(price);
 
         let brand=document.createElement("p");
         brand.innerText=`brand-${ele.brand}`;
         let rating=document.createElement("p");
         rating.innerText=`rating-${ele.rating}`;
         let btn=document.createElement("button");
+        btn.setAttribute("class","btn")
         btn.innerText="45% off";
         let div=document.createElement("div");
         div.setAttribute("id","buttonbox");
@@ -99,8 +105,18 @@ function addtoCart(ele){
    
     localStorage.setItem("addtoCart",JSON.stringify(Cartarray));
     alert("your product is successfully add to Cart");
-    window.location.href="cart.html";
+    let cart1=Cartarray.length
+    let cart2=document.getElementById("cart_add")
+    cart2.innerText=cart1
+   window.location.href="cart.html";
 }
+
+// let cart1=Cartarray.length
+// let cart2=document.getElementById("cart_add")
+// cart2.innerText=cart1
+
+
+
 function buyitem(ele){
     let datalist={
         name:ele.name,
@@ -113,5 +129,14 @@ function buyitem(ele){
     }
     Buyarray.push(datalist);
     localStorage.setItem("addtoCart",JSON.stringify(Buyarray));
-    window.location.href="buy.html"
+    window.location.href="cart.html"
 }
+
+import navbar from "../components/navbar.js";
+
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbar()
+
+import foter from "../components/foter.js";
+let fot=document.getElementById("foter")
+fot.innerHTML=foter()
