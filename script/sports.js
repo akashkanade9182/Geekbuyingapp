@@ -1,3 +1,17 @@
+import navbar from "../components/navbar.js";
+
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbar()
+
+import foter from "../components/foter.js";
+let fot=document.getElementById("foter")
+fot.innerHTML=foter()
+
+
+
+
+
+
 window.productlist=async()=>{
     const url=`https://thawing-anchorage-00134.herokuapp.com/api/sports`;
     let res=await fetch(url);

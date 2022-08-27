@@ -8,6 +8,14 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel="stylesheet" href="./styles/cart.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+ 
+<link rel="stylesheet" href="./styles/foter.css">
+
 </head>
 <body>
     <div id="cart_nav">
@@ -32,10 +40,10 @@
 
     <div id="cart_product">
         <p>Ship From:China (0 Items)</p> 
-        <div class="product_cart">
+        <!-- <div class="product_cart">
            
-            <!-- <div class="cart_img"> -->
-                <div><img src="https://img.gkbcdn.com/p/2022-05-16/engwe-ep-2-pro-folding-electric-moped-bicycle-750w-motor---gray-97a7d6-1652693974701._w280_p1_.jpg" alt=""></div>
+            
+                <div><img src="https://img.gkbcdn.com/p/2022-05-16/engwe-ep-2-pro-folding-electric-moped-bicycle-750w-motor---gray-97a7d6-1652693974701._w280_p1_.jpg" id="img" alt=""></div>
                 <div>
                     <p>HQ-YND-900D 1500W Portable Vertical Mini Electric Heater, PTC Ceramic Flame Retardant Space Heater, 3-Gear Adjustment - UK Plug</p>
                 </div>
@@ -50,23 +58,24 @@
                 </div>
                 <div><p>₹ 2712.95</p></div>
                 <div><button>Delete</button></div>
-            <!-- </div> -->
+        
 
-        </div>
+        </div> -->
 
     </div>
 
     <div id="cart_price">
         <div><p>Continue Shopping</p><i class="fi fi-rr-angle-small-right"></i></div>
         <div><p>You choose 1 item(s)</p></div>
-        <div><h3>Total :</h3> <p>₹ 2055.07</p></div>
+        <div><h3>Total :</h3> <p id="total"></p></div>
         <div>
             <Button>Pay with <p>pay</p><p>Pal</p> </Button>
             <p>The safer, easier to pay</p>
         </div>
-        <div><button>Proceed to checkout</button></div>
+        <div><button id="proceed">Proceed to checkout</button></div>
 
     </div>
+    <div id="foter"></div>
 </body>
 </html>
 <script src="./script/cart.js" type="module"></script>

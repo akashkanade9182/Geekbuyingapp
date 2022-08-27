@@ -1,3 +1,15 @@
+import navbar from "../components/navbar.js";
+
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbar()
+
+import foter from "../components/foter.js";
+let fot=document.getElementById("foter")
+fot.innerHTML=foter()
+
+
+
+
 window.productlist=async()=>{
     const url=`https://thawing-anchorage-00134.herokuapp.com/api/New`;
     let res=await fetch(url);
@@ -103,18 +115,18 @@ async function inputsearch(){
     let data=await res.json();
     appendproductlist(data)
 }
-function search(event){
-    if(event.key=="Enter")
-    {
-       inputsearch();
-    }
+// function search(event){
+//     if(event.key=="Enter")
+//     {
+//        inputsearch();
+//     }
    
-}
-async function inputsearch(){
-    let quary=document.getElementById("search_input").value;
-    const url=`https://thawing-anchorage-00134.herokuapp.com/api/${quary}`
-    let res=await fetch(url);
-    let data=await res.json();
-    appendproductlist(data)
-}
+// }
+// async function inputsearch(){
+//     let quary=document.getElementById("search_input").value;
+//     const url=`https://thawing-anchorage-00134.herokuapp.com/api/${quary}`
+//     let res=await fetch(url);
+//     let data=await res.json();
+//     appendproductlist(data)
+// }
 autoappend()
