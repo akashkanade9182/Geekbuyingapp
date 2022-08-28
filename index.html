@@ -82,5 +82,13 @@
     <div id="foter"></div>
 </body>
 </html>
-<script  src="./script/homepage.js" type="module"></script>
+<script  src="./script/homepage.js" ></script>
+<script type="module">
+     import navbar from "./components/navbar.js"
+  let nav=document.getElementById("navbar");
+  nav.innerHTML=navbar();
+  import foter from "./components/foter.js";
+let fot=document.getElementById("foter")
+fot.innerHTML=foter()
+</script>
  

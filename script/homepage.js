@@ -1,7 +1,4 @@
-import navbar from "../components/navbar.js";
 
-let nav=document.getElementById("navbar")
-nav.innerHTML=navbar()
 
 
 
@@ -86,4 +83,9 @@ function kitchenO()
 function sportsO()
 {
     window.location.href="sports.html";
+}
+let logo=document.getElementById("logo");
+logo.addEventListener("click",openhome);
+function openhome(){
+    window.location.href="index.html";
 }

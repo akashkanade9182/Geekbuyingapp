@@ -112,4 +112,9 @@ window.searchSp=async()=>{
                         })
                         appendproductlist(data);
                         }
-autoappend()
+autoappend();
+let logo=document.getElementById("logo");
+logo.addEventListener("click",openhome);
+function openhome(){
+    window.location.href="index.html";
+}

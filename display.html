@@ -3,20 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart add</title>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/foter.css">
-    <link rel="stylesheet" href="./styles/display.css">
+    <title>Document</title>
 </head>
-
- 
-<body>
-    <div id="navbar"></div>
+<link rel="stylesheet" href="./styles/display.css">
+<link rel="stylesheet" href="./styles/navbar.css">
+<link rel="stylesheet" href="./styles/foter.css">
+<body><div id="navbar"></div>
     <div id="add">
         <img src="https://img.gkbcdn.com/s3/bn/2208/1500x125-62fda2732b40c91650a7cafd.jpg" alt="error">
     </div>
@@ -24,8 +16,16 @@
     <div id="photo"></div>
     <div id="data"></div>
    </div>
-    <div id="foter"></div>
+   <div id="foter"></div>
+    
 </body>
 </html>
-<script src="./script/display.js" type="module"></script>
- 
+<script src="./script/display.js"></script>
+<script type="module">
+    import navbar from "./components/navbar.js"
+  let nav=document.getElementById("navbar");
+  nav.innerHTML=navbar();
+  import foter from "./components/foter.js";
+let fot=document.getElementById("foter")
+fot.innerHTML=foter()
+</script>

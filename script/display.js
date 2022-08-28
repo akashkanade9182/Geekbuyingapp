@@ -132,11 +132,9 @@ function buyitem(ele){
     window.location.href="checkout.html"
 }
 
-import navbar from "../components/navbar.js";
 
-let nav=document.getElementById("navbar")
-nav.innerHTML=navbar()
-
-import foter from "../components/foter.js";
-let fot=document.getElementById("foter")
-fot.innerHTML=foter()
+let logo=document.getElementById("logo");
+logo.addEventListener("click",openhome);
+function openhome(){
+    window.location.href="index.html";
+}
