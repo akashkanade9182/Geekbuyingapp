@@ -29,6 +29,7 @@ cancel.addEventListener("click",function(){
 
 
 
+//let data=JSON.parse(localStorage.getItem("addtoCart")) || []
 let data=JSON.parse(localStorage.getItem("addtoCart")) || []
 
 let total_price=data.reduce(function(sum,el){
@@ -36,5 +37,5 @@ let total_price=data.reduce(function(sum,el){
     return sum
 },0);
 
-let tot=document.getElementById("total").innerText=`₹ ${total_price}`
+document.getElementById("total").innerText=`₹ ${total_price}`
 document.getElementById("total1").innerText=`₹ ${total_price}`

@@ -7,7 +7,10 @@ import foter from "../components/foter.js";
 let fot=document.getElementById("foter")
 fot.innerHTML=foter()
 
-
+let data=JSON.parse(localStorage.getItem("addtoCart")) || []
+let leng=data.length
+let cart222=document.getElementById("cart_add")
+cart222.innerText=leng
 
 
 window.productlist=async()=>{
@@ -135,3 +138,26 @@ logo.addEventListener("click",openhome);
 function openhome(){
     window.location.href="index.html";
 }
+
+
+// let data=JSON.parse(localStorage.getItem("addtoCart")) || []
+// let cart1=data.length
+// let cart2=document.getElementById("cart_add")
+// cart2.innerText=cart1
+
+
+let signUp=JSON.parse(localStorage.getItem("signupData")) || [];
+let Name=signUp.name
+let login=localStorage.getItem("login_status")
+
+let cart22=document.getElementById("core")
+cart22.addEventListener("click",function(){
+     if(login == "true"){
+        window.location.href="cart.html"
+     }else{
+        alert("login First")
+        window.location.href="signup.html"
+
+     }
+})
+

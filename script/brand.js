@@ -103,3 +103,6 @@ logo.addEventListener("click",openhome);
 function openhome(){
     window.location.href="index.html";
 }
+
+
+ 

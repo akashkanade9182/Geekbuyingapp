@@ -89,3 +89,21 @@ logo.addEventListener("click",openhome);
 function openhome(){
     window.location.href="index.html";
 }
+
+
+let search=document.getElementById("search_input")
+search.addEventListener("keypress",function(event){
+    searchProduct()
+})
+
+async function  searchProduct(){
+    if(event.key=="Enter"){
+        let query=document.getElementById("search_input").value;
+        let res=await fetch(`https://thawing-anchorage-00134.herokuapp.com/api/${query}`)
+        let data=await res.json();
+        console.log(data)
+        appendbestceller(data);
+    }
+}
+
+

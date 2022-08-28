@@ -224,6 +224,7 @@
       localStorage.setItem("signin", JSON.stringify(signupData));
       alert("login Successful");
       window.location.href = "../index.html";
+      localStorage.setItem("login_status", true)
     } else {
       alert("User data does not exist please check before you Enter ");
     }

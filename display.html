@@ -3,7 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
 </head>
 <link rel="stylesheet" href="./styles/display.css">
 <link rel="stylesheet" href="./styles/navbar.css">
@@ -28,4 +33,19 @@
   import foter from "./components/foter.js";
 let fot=document.getElementById("foter")
 fot.innerHTML=foter()
+
+let signUp=JSON.parse(localStorage.getItem("signupData")) || [];
+let Name=signUp.name
+let login=localStorage.getItem("login_status")
+
+let cart22=document.getElementById("core")
+cart22.addEventListener("click",function(){
+     if(login == "true"){
+        window.location.href="cart.html"
+     }else{
+        alert("login First")
+        window.location.href="signup.html"
+
+     }
+})
 </script>

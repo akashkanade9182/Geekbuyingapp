@@ -89,6 +89,8 @@ function Qincrease(){
     count.innerText=counter;
 
 };
+
+
 let Cartarray=[];
 let Buyarray=[];
 function addtoCart(ele){
@@ -108,13 +110,12 @@ function addtoCart(ele){
     let cart1=Cartarray.length
     let cart2=document.getElementById("cart_add")
     cart2.innerText=cart1
-   window.location.href="cart.html";
+   //window.location.href="cart.html";
 }
 
 // let cart1=Cartarray.length
 // let cart2=document.getElementById("cart_add")
 // cart2.innerText=cart1
-
 
 
 function buyitem(ele){
@@ -133,8 +134,9 @@ function buyitem(ele){
 }
 
 
-let logo=document.getElementById("logo");
-logo.addEventListener("click",openhome);
-function openhome(){
-    window.location.href="index.html";
-}
+// let logo=document.getElementById("logo");
+// logo.addEventListener("click",openhome);
+// function openhome(){
+//     window.location.href="index.html";
+// }
+
