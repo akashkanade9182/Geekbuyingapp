@@ -26,3 +26,15 @@ cancel.addEventListener("click",function(){
     window.location.href="confirm.html"
     //window.location.href="navbar.html"
 })
+
+
+
+let data=JSON.parse(localStorage.getItem("addtoCart")) || []
+
+let total_price=data.reduce(function(sum,el){
+    sum+=Number(el.price)
+    return sum
+},0);
+
+let tot=document.getElementById("total").innerText=`₹ ${total_price}`
+document.getElementById("total1").innerText=`₹ ${total_price}`
