@@ -129,7 +129,7 @@ function buyitem(ele){
     }
     Buyarray.push(datalist);
     localStorage.setItem("addtoCart",JSON.stringify(Buyarray));
-    window.location.href="cart.html"
+    window.location.href="checkout.html"
 }
 
 import navbar from "../components/navbar.js";
