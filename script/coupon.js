@@ -10,7 +10,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); 
+  setTimeout(showSlides, 2000); 
 }
 window.productlist=async()=>{
   const url=`https://thawing-anchorage-00134.herokuapp.com/api/New`;
@@ -63,7 +63,7 @@ function appendproductlist(data){
       let code=document.createElement("h4");
       code.innerText="GHKLENM";
       let copy=document.createElement("div");
-      copy.innerText="coupan";
+      copy.innerText="coupon";
       copy.addEventListener("click",function(){
         openpop();
       });

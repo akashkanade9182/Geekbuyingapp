@@ -110,7 +110,7 @@ function addtoCart(ele){
     let cart1=Cartarray.length
     let cart2=document.getElementById("cart_add")
     cart2.innerText=cart1
-   //window.location.href="cart.html";
+//    window.location.href="cart.html";
 }
 
 // let cart1=Cartarray.length
