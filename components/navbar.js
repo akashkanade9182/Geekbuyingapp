@@ -9,7 +9,7 @@ function navbar(){
   </div>
   <div id="mid_nav">
        <div  > <a href="index.html"><img src="https://content1.geekbuying.com/m/Content/images/headImg/geek_logo.png" alt="geek_logo"> </a></div>
-       <div> <div><p>All Categories</p><button><i class="fi fi-rr-caret-down"></i></button> <input type="text" id="search_input" placeholder="Search by keywords"><button><i class="fi fi-bs-search"></i></button></div></div>
+       <div> <div><p>All Categories</p><button><i class="fi fi-rr-caret-down"></i></button> <input onkeypress="search(event)" type="text" id="search_input" placeholder="Search by keywords"><button><i class="fi fi-bs-search"></i></button></div></div>
        <div>
         <div><p>Ship to</p><img src="https://cdn-icons-png.flaticon.com/512/206/206606.png" alt=""> <p>/INR</p><i class="fi fi-rr-angle-small-down"></i></div>
         <div><i class="fi fi-rs-user"></i><a href="signup.html"><p>Sign in</p></a></div>
