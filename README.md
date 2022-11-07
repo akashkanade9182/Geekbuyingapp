@@ -36,7 +36,7 @@ Geeksbuying.com it is international eccorence website ,here you can buy product 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/akashkanade9182/Geekbuyingapp.git
 ```
 
 Go to the project directory
