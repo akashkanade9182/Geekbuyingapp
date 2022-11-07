@@ -23,13 +23,13 @@ Geeksbuying.com it is international eccorence website ,here you can buy product 
 
  3)Add to Cart
 
- 4)sort product by price and category.
+ 4)Sort product by price and category.
 
- 5)search bar to search product by entering keywords.
+ 5)Search bar to search product by entering keywords.
 
- 6)payment methods
+ 6)Payment methods
  
- 7)checkout
+ 7)Checkout
 
 ## Run Locally
 
