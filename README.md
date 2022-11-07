@@ -6,8 +6,7 @@ Geeksbuying.com it is international eccorence website ,here you can buy product 
 
 ## Tech Stack
 
-**Client:**  
-           1)javaScript
+**Client:**  1)javaScript
            
            2) HTML
 
